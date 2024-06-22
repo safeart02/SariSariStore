@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Ken's Casuals </title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="casuals.js"></script>
+	</head>
+	
+	<body style="max-width: 100%; min-width: 100%; font-family: Century Gothic; background-image: url(bg1.png); overflow-x: hidden;">
+		<div class = "ff" style="background-color: white">
+		
+			<div class = "formatting">
+				<img src="SHOP_BANNER.PNG" style="max-width:100%; min-width:100%;">
+			</div>
+		</div>
+		<div class = "gg">	
+			<div class="image-container">
+				<img id="image" src="ssfront/image1.png" alt="Image">
+				<img id="image" src="ssfront/image2.png" alt="Image">
+				<img id="image" src="ssfront/image3.png" alt="Image">
+			</div>
+		</div>
+		
+		<div class = "ff" style="background-color: white">
+		
+			<div class = "formatting">
+				<img src="SHOP_BANNER.PNG" style="max-width:100%; min-width:100%;">
+			</div>
+			
+			<div class="scroll-to-top" onclick="scrollToTop()">
+				<span>^</span>
+			</div>
+			
+			<div class="container">
+				<div class="box left-box">
+					<img src="LOGO_1.png" style="max-width:100%; min-width:100%;">
+					<div id="scrollingContainer" class = "connn" style = "text-align:center">
+						<button class="button2" onclick="smoothScroll('#JEANS')">JEANS</button> <br>
+						<button class="button2" onclick="smoothScroll('#T-SHIRTS')">T-SHIRTS</button> <br>
+						<button class="button2" onclick="smoothScroll('#PERFUMES')">PERFUMES</button> <br>
+						<button class="button2" onclick="smoothScroll('#SANDO')">SANDO</button> <br>
+						<button class="button2" onclick="smoothScroll('#TOYS')">TOYS</button> <br>
+					</div>
+				</div>
+				<div class="box right-box">
+
+				<!-- Pants -->
+					<h2 style="font-size:50px; text-align:left;" id="JEANS">JEANS</h2>
+					<div class = "shop" style = "text-align: center;">
+						<div class = "con1" data-price="749">
+							<img src="jeans/pants.png" style="max-width:100%; min-width:100%;">
+							<p>Jean Pants</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱749</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks1">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount1', 'Stocks1', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount1">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount1', 'Stocks1', 1)">+</button>
+						</div>
+						<div class = "con2" data-price="1249"> 
+							<img src="jeans/jacket.png" style="max-width:100%; min-width:100%;">
+							<p>Jean Jacket</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱1249</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks2">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount2', 'Stocks2', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount2">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount2', 'Stocks2', 1)">+</button>
+						</div>
+						<div class = "con3" data-price="499">
+							<img src="jeans/shorts.png" style="max-width:100%; min-width:100%;">
+							<p>Jean Shorts</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱499</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks3">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount3', 'Stocks3', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount3">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount3', 'Stocks3', 1)">+</button>
+						</div>
+						<div class = "con4" data-price="849">
+							<img src="jeans/bag.png" style="max-width:100%; min-width:100%;">
+							<p>Jean Bag</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱849</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks4">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount4', 'Stocks4', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount4">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount4', 'Stocks4', 1)">+</button>
+						</div>
+					</div>
+					
+					<h2 style="font-size:50px; text-align:left;" id="T-SHIRTS">T-SHIRTS</h2>
+					<!-- Tshirts -->
+					<div class = "shop" style = "text-align: center;">
+						<div class = "con1" data-price="1499">
+							<img src="tshirts/tshirt1.png" style="max-width:100%; min-width:100%;">
+							<p>T1 Shirt</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱1499</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks5">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount5', 'Stocks5', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount5">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount5', 'Stocks5', 1)">+</button>
+						</div>
+						<div class = "con2"  data-price="899">
+							<img src="tshirts/tshirt2.png" style="max-width:100%; min-width:100%;">
+							<p>YOASOBI Shirt</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱899</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks6">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount6', 'Stocks6', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount6">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount6', 'Stocks6', 1)">+</button>
+						</div>
+						<div class = "con3" data-price="499">
+							<img src="tshirts/tshirt3.png" style="max-width:100%; min-width:100%;">
+							<p>Palworld Shirt</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱499</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks7">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount7', 'Stocks7', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount7">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount7', 'Stocks7', 1)">+</button>
+						</div>
+						<div class = "con4"  data-price="499">
+							<img src="tshirts/tshirt4.png" style="max-width:100%; min-width:100%;">
+							<p>Cyberpunk Shirt</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱499</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks8">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount8', 'Stocks8', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount8">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount8', 'Stocks8', 1)">+</button>
+						</div>
+					</div>
+					
+					<h2 style="font-size:50px; text-align:left;" id="PERFUMES">PERFUMES</h2>
+					<!-- Perfumes -->
+					<div class = "shop" style = "text-align: center;">
+						<div class = "con1" data-price="1499">
+							<img src="perfumes/perfume1.png" style="max-width:100%; min-width:100%;">
+							<p>Peach Fuzz</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱1499</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks9">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount9', 'Stocks9', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount9">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount9', 'Stocks9', 1)">+</button>
+						</div>
+						<div class = "con2"  data-price="1899">
+							<img src="perfumes/perfume2.png" style="max-width:100%; min-width:100%;">
+							<p>Burberry Pear</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱1899</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks10">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount10', 'Stocks10', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount10">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount10', 'Stocks10', 1)">+</button>
+						</div>
+						<div class = "con3"  data-price="899">
+							<img src="perfumes/perfume3.png" style="max-width:100%; min-width:100%;">
+							<p>Suits for Men</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱899</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks11">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount11', 'Stocks11', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount11">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount11', 'Stocks11', 1)">+</button>
+						</div>
+						<div class = "con4"  data-price="899">
+							<img src="perfumes/perfume4.png" style="max-width:100%; min-width:100%;">
+							<p>Delight</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱899</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks12">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount12', 'Stocks12', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount12">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount12', 'Stocks12', 1)">+</button>
+						</div>
+					</div>
+					
+					<h2 style="font-size:50px; text-align:left;" id="SANDO">SANDO</h2>
+					<!-- Sandos -->
+					<div class = "shop" style = "text-align: center;">
+						<div class = "con1" data-price="399">
+							<img src="sandos/sando1.png" style="max-width:100%; min-width:100%;">
+							<p>Special Sando</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱399</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks13">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount13', 'Stocks13', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount13">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount13', 'Stocks13', 1)">+</button>
+						</div>
+						<div class = "con2" data-price="199">
+							<img src="sandos/sando2.png" style="max-width:100%; min-width:100%;">
+							<p>Red Sando</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱199</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks14">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount14', 'Stocks14', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount14">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount14', 'Stocks14', 1)">+</button>
+						</div>
+						<div class = "con3" data-price="199">
+							<img src="sandos/sando3.png" style="max-width:100%; min-width:100%;">
+							<p>Blue Sando</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱199</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks15">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount15', 'Stocks15', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount15">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount15', 'Stocks15', 1)">+</button>
+						</div>
+						<div class = "con4" data-price="199">
+							<img src="sandos/sando4.png" style="max-width:100%; min-width:100%;">
+							<p>Black Sando</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱199</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks16">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount16', 'Stocks16', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount16">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount16', 'Stocks16', 1)">+</button>
+						</div>
+					</div>
+					
+					<h2 style="font-size:50px; text-align:left;" id="TOYS">TOYS</h2>
+					<!-- Toys -->
+					<div class = "shop" style = "text-align: center;">
+						<div class = "con1" data-price="249">
+							<img src="toys/toy1.png" style="max-width:100%; min-width:100%;">
+							<p>Water Gun</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱249</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks17">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount17', 'Stocks17', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount17">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount17', 'Stocks17', 1)">+</button>
+						</div>
+						<div class = "con2" data-price="149">
+							<img src="toys/toy2.png" style="max-width:100%; min-width:100%;">
+							<p>Bey Blade</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱149</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks18">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount18', 'Stocks18', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount18">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount18', 'Stocks18', 1)">+</button>
+						</div>
+						<div class = "con3" data-price="499">
+							<img src="toys/toy3.png" style="max-width:100%; min-width:100%;">
+							<p>Tamiya Car</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱499</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks19">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount19', 'Stocks19', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount19">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount19', 'Stocks19', 1)">+</button>
+						</div>
+						<div class = "con4" data-price="899">
+							<img src="toys/toy4.png" style="max-width:100%; min-width:100%;">
+							<p>RC Helicopter</p>
+							<label for="Price">Price:</label>
+							<label for="CASH"  style="font-family: Helvetica">₱899</label>
+							<br><hr>
+							<label for="Stock">Stock:</label>
+							<label id="Stocks20">20</label><br>
+        
+							<button type="button" class = "button" onclick="updateCount('Amount20', 'Stocks20', -1)">-</button>
+							<label for="Amount">Amount:</label>
+							<label id="Amount20">0</label>
+							<button type="button" class = "button" onclick="updateCount('Amount20', 'Stocks20', 1)">+</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+
+		</div>
+		<div class="footer" id="footer">
+			<div class = "left-cc">
+			Total Price: <br>
+			<label for = "placeh">₱</label>
+			<span id="totalPrice">0</span>
+			</div>
+			<div class="right-cc" id="selectedItemContainer">
+    <!-- Selected items will be displayed here -->
+			</div>
+		</div>
+	</body>
+</html>
